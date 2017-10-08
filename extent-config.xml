@@ -1,0 +1,32 @@
+// make the charts visible on report open
+htmlReporter.config().setChartVisibilityOnOpen(true);
+
+// create offline report (pro-only)
+htmlReporter.config().setCreateOfflineReport(true);
+
+// automatic screenshot management (pro-only)
+htmlReporter.config().setAutoCreateRelativePathMedia(true);
+
+// report title
+htmlReporter.config().setDocumentTitle("aventstack - ExtentReports");
+
+// encoding, default = UTF-8
+htmlReporter.config().setEncoding("UTF-8");
+
+// protocol (http, https)
+htmlReporter.config().setProtocol(Protocol.HTTPS);
+
+// report or build name
+htmlReporter.config().setReportName("Build-1224");
+
+// chart location - top, bottom
+htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+
+// theme - standard, dark
+htmlReporter.config().setTheme(Theme.STANDARD);
+
+// add custom css
+htmlreporter.config().setCSS("css-string");
+
+// add custom javascript
+htmlreporter.config().setJS("js-string");
